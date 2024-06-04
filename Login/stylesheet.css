@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+}
+
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #4a6ea763;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.info-childs p {
+    margin: 15px 0 ;
+    color: #555;
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #4a6ea7;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #4a6ea7;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.info-childs input:hover {
+    background-color: #4a6ea7;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: #4a6ea724;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-information-childs {
+    padding: 0 30px;
+}
+
+.form-information-childs h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.form-information-childs p {
+    color: #555;
+}
+
+.icons i {
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #4a6ea7;
+    border: solid thin #4a6ea7;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.icons i:hover {
+    background-color: #4a6ea7;
+    color: #fff;
+}
+span {
+    padding-left: 1rem;
+    font-size: 15px;
+    font-weight: 600;
+}
+.form {
+    margin: 30px 0 0 0;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+.form label i {
+    color: #4a6ea7;
+}
+
+.form input[type="submit"] {
+    background-color: #4a6ea7;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20%;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form input[type="submit"]:hover {
+    background-color: #364f79;
+}
+
+/* form hide */
+
+.hide {
+    display: none;
+}
+
+/* Alerts and messages */
+
+.form div .alerta {
+    width: 290px;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+
+.form > .alerta-error,
+.form > .alerta-exito {
+    display: none;
+}
+
+.form .alertaError {
+    display: block;
+    background-color: #f6606041;
+    border: solid 2px #f66060;
+    border-radius: 5px;
+    padding: .3rem 0rem;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.form .alertaExito {
+    display: block;
+    background-color: #0ca82941;
+    border: solid 2px #0ca828;
+    border-radius: 5px;
+    padding: .3rem 0rem;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.form .error {
+    outline: solid 2px #9d2222;
+}
+
+
+/* Media querys */
+
+@media screen and (max-width:750px) {
+    html {
+      font-size: 12px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    html {
+      font-size: 15px;
+    }
+     
+    .container-form {
+      height: auto;
+      flex-direction: column;
+    }
+     
+    .information {
+      width: 100%;
+      padding: 20px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0;
+    }
+     
+    .form-information {
+      width: 100%;
+      padding: 20px;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 0;
+    }
+}

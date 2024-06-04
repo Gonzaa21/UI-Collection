@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Code</title>
+    <!--fonts-preconnect-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--style-links-->
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link href="./dist/prism.css" rel="stylesheet">
+</head>
+<body>
+    <div class="frame-window">
+        <div class="frame-header">
+            <div class="frame-buttons">
+                <div class="frame-buttons-red"></div>
+                <div class="frame-buttons-yellow"></div>
+                <div class="frame-buttons-green"></div>
+            </div>
+            <div class="frame-name">
+                <input type="text" placeholder="Untitled" value="">
+            </div>
+            <div class="frame-language">
+                <input type="text" placeholder="language">
+            </div>
+        </div>
+        <div class="frame-editor">
+            <pre><code class="language-markup">
+&lt;p&gt;Example code&lt;/p&gt;
+            </code></pre>
+        </div>
+    </div>
+    <script src="./dist/prism.js"></script>
+</body>
+</html>

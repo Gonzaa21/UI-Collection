@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.grid-cards {
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 15px;
+    border: solid 1px #a8a8a8;
+    border-radius: 10px;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.card div > .card-img {
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+    transition: width .5s
+}
+
+.image-script {
+  width: 30rem;
+  border-radius: 10px 10px 0 0;
+  transition: width .5s
+}
+
+.card-header {
+    padding: 10px 0 0 15px;
+}
+
+.card-header h3 {
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.qualification {
+    display: flex;
+    align-items: center;
+}
+
+.qualy-- {
+  justify-content: space-between;
+}
+
+/* Rating css */
+
+#rate {
+    background-color: #003b95;
+    color: #fff;
+    margin-right: 10px;
+    padding: 4px;
+    border-radius: 25% 10%;
+    font-weight: 500;
+}
+
+.qualification > div > p {
+  font-size: 14px;
+  color: rgb(97, 97, 97);
+}
+
+.qualification > p {
+  font-size: 14px;
+  color: rgb(97, 97, 97);
+}
+
+.qualification-1 {
+  display: flex;
+  align-items: center;
+}
+
+/* Prizes css */
+
+.card-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.card-text-left {
+  display: flex;
+  align-items: stretch;
+}
+
+.card-text-left img {
+  width: 27px;
+  pointer-events: none;
+}
+
+.card-prize {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card-prize-cent {color: #424242;}
+
+.card-text-right span {
+  display: inline-block;
+  padding: 0 3px;
+  color: #00a650;
+  border: 1px solid #00a650;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* Hover card */
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: box-shadow .2s ease-in-out;
+}
+
+/* Offer messages */
+
+:root {
+  --size: 12px;
+  --weight: 600;
+  --radius: 3px;
+}
+
+.card-header_1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#deal {
+  font-size: var(--size);
+  font-weight: var(--weight);
+  background-color: #2b6bcc;
+  color: #fff;
+  padding: 3px 4px;
+  line-height: 1;
+  border-radius: var(--radius);
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#deal:hover {
+  box-shadow: 0px 0px 3px 1px #2b6bcc;
+}
+
+#deal > img {
+  padding-right: 5px;
+  pointer-events: none;
+}
+
+#coupon {
+  font-size: var(--size);
+  font-weight: var(--weight);
+  background-color: rgba(65, 131, 230, 0.2);
+  color: #0027a6;
+  border-radius: var(--radius);
+  padding: 3px 4px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+#coupon > img {
+  padding-right: 3px;
+  width: 20px;
+  pointer-events: none;
+}

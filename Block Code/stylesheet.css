@@ -1,0 +1,89 @@
+/* Using Prism.js for code block styles. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    outline: none;
+}
+
+.frame-window {
+    background: linear-gradient(140deg, rgb(51, 51, 51), rgb(24, 24, 24));;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 50%;
+    padding-bottom: .5rem;
+}
+
+.frame-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c2e35;
+    padding: 1rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.frame-buttons {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.frame-buttons-red,
+.frame-buttons-yellow,
+.frame-buttons-green {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    margin: 0 3px;
+}
+
+.frame-buttons-red {
+    background: #FF5C5C;
+}
+
+.frame-buttons-green {
+    background-color: #2DC83E;
+}
+
+.frame-buttons-yellow {
+    background-color: #FDBB31;
+}
+
+.frame-name {
+    width: 90%;
+}
+
+.frame-name input {
+    width: 100%;
+    text-align: center;
+    color: #ffffff4d;
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+
+.frame-language {
+    padding-left: 15px;
+}
+
+.frame-language input {
+    width: 90px;
+    text-align: center;
+    background-color: transparent;
+    color: rgb(172, 172, 172);
+    border: none;
+}
+
+.frame-editor {
+    display: flex;
+    justify-content: start;
+}
+
+/* Media querys */
+
+@media (max-width: 540px) {.frame-window {width: 95%;}}
+@media (min-width: 541px) and (max-width: 878px) {.frame-window {width: 85%;}}

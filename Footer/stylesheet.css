@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.menu {
+    margin: 40px 0 30px;
+}
+
+.footer-menu {
+    display: inline-block;
+    padding: 15px;
+}
+
+.footer-menu-link {
+    color: rgb(109, 109, 109);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-menu-link:hover {
+    color: black;
+}
+
+.social-link, .menu, .copyright, i {
+    text-align: center;
+}
+
+.social-link {
+    font-size: 1.5rem;
+}
+
+.social-link a {
+    padding: 15px;
+    color: rgb(156 162 175);
+}
+
+.social-link a:hover {
+    color: black;
+    opacity: .5;
+}
+
+.copyright {
+    margin: 20px;
+    color: rgb(107, 114, 128);
+    font-size: 13px;
+}
