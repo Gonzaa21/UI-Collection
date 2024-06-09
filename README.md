@@ -22,7 +22,7 @@ Of course, no single template will suit every project since each has unique requ
 *Just navigate to the folder containing your chosen example and open the HTML file in your browser.*
 * Clone the repository
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Gonzaa21/UI-Collection.git
    ```
 * Open `index.html` in your browser to see the templates in action.
 ## Contact
